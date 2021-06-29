@@ -7,7 +7,7 @@ fruits.addEventListener('click', showFruits);
 function showFruits(){
     const xhr = new XMLHttpRequest();
 
-    xhr.open('GET', '../js/json/fruits.json', true);
+    xhr.open('GET', 'fruits.json', true);
 
     xhr.onload = function(){
         if (this.status == 200) {
@@ -44,7 +44,7 @@ veg.addEventListener('click', showVeg);
 function showVeg(){
     const xhr = new XMLHttpRequest();
 
-    xhr.open('GET', '../js/json/vegetables.json', true);
+    xhr.open('GET', 'vegetables.json', true);
 
     xhr.onload = function(){
         if (this.status == 200) {
